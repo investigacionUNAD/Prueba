@@ -20,7 +20,7 @@ public class aplicativo {
 	By registerPageLocator = By.xpath("//ul[@class='ui-menu-list ui-helper-reset']");
 	By cambioLocator = By.name("formTab:j_idt35:inlineFeedback1");
 	By confirmLocator = By.cssSelector("input[name='formTab:j_idt35:inlineFeedback2']");
-	By Cambio = By.name("formTab:j_idt35:j_idt53");
+	By Cambio = By.name("formTab:j_idt35:j_idt5");
 	@Before
 	public void setUp() throws Exception {
 		System.setProperty("webdriver.chrome.driver", "./src/test/resources/chromedriver/chromedriver.exe");
@@ -31,7 +31,7 @@ public class aplicativo {
 
 	@After
 	public void tearDown() throws Exception {
-		//driver.quit();
+		driver.quit();
 	}
 
 	@Test
